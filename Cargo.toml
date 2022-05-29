@@ -1,0 +1,16 @@
+[package]
+name = "export-rocket-settings"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mongodb = "2.2.1"
+futures = "0.3"
+tokio = { version = "1.18.2", features = ["full"] }
+serde = "1.0.137"
+    [mongodb]
+    version = "2.2.1"
+    default-features = true
+    features = ["tokio"]
